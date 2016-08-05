@@ -4,17 +4,7 @@
 
 body{
 	font-size: 20px;
-}
-.navegacao{
-	padding: 0;
-}
-.navbar{
-	padding: 0%;
-	margin: 0%;
-	font-family: 'Poiret One', cursive;
-	font-size: 2rem;
-	background: rgba(245,245,245,1);
-
+	font-family: 'Raleway', sans-serif;
 }
 .carousel-principal{
 	padding: 0;
@@ -44,8 +34,11 @@ width: 100%;
 }
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-	transition: 2s;
+  	opacity: 1;
+	transition: 3s;
+	 -moz-transform: translateX(0%);
+	 -moz-transition:.001s;
+
 }
 .carousel-fade .carousel-control {
   z-index: 2;
@@ -94,7 +87,7 @@ width: 100%;
 	top: 30%;
 }
 .caption-1 h1, .caption-2 h1, .caption-3 h1{
-	font-size: 9rem;
+	font-size: 10rem;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: .3em;
 	text-transform: uppercase;
@@ -103,11 +96,18 @@ width: 100%;
 	visibility: hidden;
 }
 
-
-
+.trabalhos{
+	margin-top: 7%;
+	text-align: center;
+	border-bottom: 2px solid #606060;
+}
+.trabalhos h2{
+	font-size: 5rem;
+	text-transform: uppercase;
+}
 .accordion {
 	width: 100%;
-	height: 250px;
+	height: 500px;
 	overflow: hidden;
 	margin: 50px auto;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -116,6 +116,7 @@ width: 100%;
 }
 
 .accordion ul {
+	height: 100%;
 	width: 100%;
 	display: table;
 	table-layout: fixed;
@@ -128,7 +129,7 @@ width: 100%;
 	vertical-align: bottom;
 	position: relative;
 	width: 25%;
-	height: 250px;
+	height: 100%;
 	background-position: 50% 50%;
 }
 
@@ -177,54 +178,48 @@ width: 100%;
 	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
 	
 	/*Transitions to give animation effect*/
-	transition: 0.5s;
-	-webkit-transition:  0.5s;
-	-moz-transition: 0.5s;
+	transition: 1s;
+	-webkit-transition:  1s;
+	-moz-transition: 1s;
 
 
 }
 
 .accordion ul li:nth-child(1) { 
-	background-image: url("../_imgs/_espdec/espelho-capa-resized.jpg");
-	-webkit-filter: grayscale(1); /* Old WebKit */
+	background-image: url("../_imgs/_parq/arquitetonicos-capa.jpg");
+	background-repeat: no-repeat;
+
+	 /* Old WebKit */
 	 }
 
 .accordion ul li:nth-child(2) {
-	background-image: url("../_imgs/_parq/arquitetonicos-capa-resized.jpg"); 
-	-webkit-filter: grayscale(1); /* Old WebKit */
+	background-image: url("../_imgs/_pdec/decorativos-capa.jpg"); 
+	background-repeat: no-repeat;
+
 }
 
 .accordion ul li:nth-child(3) { 
-	background-image: url("../_imgs/_pdec/decorativos-capa-resized.jpg"); 
-	-webkit-filter: grayscale(1); /* Old WebKit */
+	background-image: url("../_imgs/_espdec/espelho-capa.jpg"); 
+	background-repeat: no-repeat;
+
 }
 
 .accordion ul li:nth-child(4) { 
-	background-image: url("../_imgs/_pcnc/placa-capa-resized.jpg");
-	-webkit-filter: grayscale(1); /* Old WebKit */
-	 }
-.accordion ul li:nth-child(1):hover { 
-	background-image: url("../_imgs/_espdec/espelho-capa-resized.jpg");
-	-webkit-filter: none; /* Old WebKit */
+	background-image: url("../_imgs/_pcnc/placa-capa.jpg");
+	background-repeat: no-repeat;
+
 	 }
 
-.accordion ul li:nth-child(2):hover  {
-	background-image: url("../_imgs/_parq/arquitetonicos-capa-resized.jpg"); 
-	-webkit-filter: none;  /* Old WebKit */
+
+.accordion ul:hover li {
+	width: 20%; 
+	-webkit-filter: grayscale(1);
 }
-
-.accordion ul li:nth-child(3):hover  { 
-	background-image: url("../_imgs/_pdec/decorativos-capa-resized.jpg"); 
-	-webkit-filter: none;  /* Old WebKit */
-}
-
-.accordion ul li:nth-child(4):hover  { 
-	background-image: url("../_imgs/_pcnc/placa-capa-resized.jpg");
-	-webkit-filter: none;  /* Old WebKit */
-	 }
 
 .accordion ul:hover li:hover {
-	width: 70%; }
+	width: 60%;
+	-webkit-filter: none;
+	 }
 
 .accordion ul:hover li:hover a { 
 	background: rgba(0, 0, 0, 0.4); }
@@ -233,4 +228,72 @@ width: 100%;
 	opacity: 1;
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
+}
+.quem-somos{
+	-webkit-transition-all: .5s;
+	margin-bottom:8%;
+}
+.quem-somos h2{
+	margin-top: 5%;
+	text-align: center;
+	font-size: 5rem;
+	text-transform: uppercase;
+	border-bottom: 2px solid #606060;
+	padding-bottom: .5%;
+}
+.sobre-texto p{
+	margin-top: 2%;
+	padding: 2%;
+	text-indent: 5%;
+	font-size: 2rem;
+	color: #202020;
+	font-weight: bold;
+}
+.sobre-foto img{
+	transition: .5s;
+	margin-top: 5%;
+}
+.quem-somos:hover .sobre-foto img{
+	transition: .5s;
+	-webkit-filter: blur(2px);
+}
+.contato{
+	padding: 0;
+	background: #202020;
+	color: #ffffff;
+	text-align: left;
+}
+.contato-texto-1, .contato-texto-2,{
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.contato-texto-3{
+	margin-top: 3%;
+}
+.contato-texto-1 h3, .contato-texto-2 h3{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contato-texto-1 p, .contato-texto-2 p{
+	font-size: 1.5rem;
+}
+.contato a{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 1s;
+}
+.contato a:hover{
+	color: #e74c3c;
+	transition: 1s;
+}
+.contato ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.contato ul li{
+	margin-right: 1%;
+	display: inline-block;
 }
